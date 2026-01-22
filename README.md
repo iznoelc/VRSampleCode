@@ -2,7 +2,7 @@
 This is sample code created for a VR development with Unity course at New College of Florida. The intention of this code is to demonstrate the basics of building a VR project in Unity using the new Meta XR SDKs and demonstrate the capabilities of the building blocks (such as grab interactions and camera rig) with a few extra basic Unity features (such as switching scenes and a day/night cycle). 
 
 ## PROJECT OVERVIEW
-See a short playthrough of this project [here]().
+See a short playthrough of this project [here](https://drive.google.com/file/d/1-6Fometqpo91JHnKgByfp0osla4wwLHk/view?usp=sharing).
 
 ## PROJECT REQUIREMENTS
 In order to open this project in Unity, you will need:
@@ -12,7 +12,9 @@ In order to open this project in Unity, you will need:
 
 
 ## PROJECT FIXES UPON OPENING THE PROJECT FOR THE FIRST TIME
-1. Upon installation, you may open the project and receive the following error:
+There may be a few errors upon opening the project for the first time after installation. If this is the case, I recommend NOT opening the project in safe mode.
+
+1. One error you may receieve is:
 
 > Library\PackageCache\com.meta.xr.sdk.core@*\Editor\MetaXRSimulator\XRSimInstallationDetector.cs(87,29): error CS0246: The type or namespace name 'WindowsXRSimInstallationDetector' could not be found (are you missing a using directive or an assembly reference?)
 
