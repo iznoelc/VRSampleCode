@@ -2,11 +2,14 @@ using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Determines the behavior of the door and whether the player should be able to move to the next level. 
+/// </summary>
 public class DoorBehavior : MonoBehaviour
 {
-    [SerializeField] private SpherePlatform sPlatform;
-    [SerializeField] private CubePlatform cPlatform; 
-    private bool canExitLevel;
+    [SerializeField] private SpherePlatform sPlatform; // the platform the sphere should be placed on
+    [SerializeField] private CubePlatform cPlatform;  // the platform the cube should be placed on 
+    private bool canExitLevel; // whether the player can exit the level
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,7 +17,9 @@ public class DoorBehavior : MonoBehaviour
         canExitLevel = false;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// If the player has placed the cube and sphere on the platform and they haven't already been able to exit the level, allow the player to exit the level.
+    /// </summary>
     void Update()
     {
         if (cPlatform.cubeOnPlatform && sPlatform.sphereOnPlatform && !canExitLevel)
@@ -24,6 +29,9 @@ public class DoorBehavior : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// If the player collides with the door and they are able to exit level, move them to the next scene.
+    /// </summary>
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && canExitLevel)

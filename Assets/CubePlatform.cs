@@ -1,14 +1,20 @@
 using UnityEngine;
 
+/// <summary>
+/// Determines when a cube enters a designated platform.
+/// </summary>
 public class CubePlatform : MonoBehaviour
 {
-    [HideInInspector] public bool cubeOnPlatform;
+    [HideInInspector] public bool cubeOnPlatform; // variable to determine whether the cube is on the platform
 
     public void Start()
     {
         cubeOnPlatform = false;
     }
 
+    /// <summary>
+    /// Sets cubeOnPlatform to true when cube remains on the platform
+    /// </summary>
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Cube"))
@@ -18,6 +24,9 @@ public class CubePlatform : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sets cubeOnPlatform to false when the cube exits the platform. 
+    /// </summary>
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Cube"))
