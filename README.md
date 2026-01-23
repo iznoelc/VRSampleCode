@@ -10,6 +10,10 @@ In order to open this project in Unity, you will need:
 - Meta XR All-in-One SDK* 83.0.1
   - *THE SDK SHOULD BE AUTOMATICALLY INCLUDED WHEN THIS CODE IS DOWNLOADED, but if you want to be safe, you can add it to your library from the Unity Asset Store [HERE](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657) before downloading the project. MAKE SURE YOU USE VERSION **83.0.1**
 
+- In order to test this project in your VR headset via Unity
+  - You will need to connect your headset to your PC via Meta Horizon Link
+    - Instructions to set-up Meta Horizon Link can be found [here](https://www.meta.com/help/quest/1517439565442928/).
+  - For development with Unity, once you've installed Meta Horizon Linked and connected your headset to your PC, navigate to Settings > General and find "Unknown Sources." Make sure this is enabled. 
 
 ## PROJECT FIXES UPON OPENING THE PROJECT FOR THE FIRST TIME
 There may be a few errors upon opening the project for the first time after installation. If this is the case, I recommend NOT opening the project in safe mode.
