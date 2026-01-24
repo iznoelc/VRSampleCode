@@ -9,6 +9,9 @@ In order to open this project in Unity, you will need:
 - Unity Version 6000.1.17f1
 - Meta XR All-in-One SDK* 83.0.1
   - *THE SDK SHOULD BE AUTOMATICALLY INCLUDED WHEN THIS CODE IS DOWNLOADED, but if you want to be safe, you can add it to your library from the Unity Asset Store [HERE](https://assetstore.unity.com/packages/tools/integration/meta-xr-all-in-one-sdk-269657) before downloading the project. MAKE SURE YOU USE VERSION **83.0.1**
+ 
+## PROJECT INSTALLATION
+You can follow the following steps to set-up the project or watch a video tutorial [here](https://www.youtube.com/watch?v=tr1_z3OURKc).
 
 - In order to test this project in your VR headset via Unity
   - You will need to connect your headset to your PC via Meta Horizon Link
