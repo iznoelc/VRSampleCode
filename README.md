@@ -36,14 +36,27 @@ Movement is controlled by mapping different buttons on the Meta Quest controller
 - Open the InputSystem_Actions file
 - Find "Actions" (should be at the top) and then click the plus button next to it.
 
+<img width="730" height="598" alt="Screenshot 2026-03-16 171500" src="https://github.com/user-attachments/assets/375f503c-a65d-4b69-854a-8ad81117ae34" />
+
+
 If you wanted to create actions that map to the x and y buttons for up and down movement:
 - Add a MoveUp and MoveDown action. 
 - On the left, there is the action properties panel. Make sure action type is set to "Button"
 - Right click the action and find "AddBinding"
-	- Go to where it says <NoBinding>. Click this. 
+	- Go to where it says <NoBinding>. Click this.
+
+
+    - <img width="733" height="603" alt="Screenshot 2026-03-16 171512" src="https://github.com/user-attachments/assets/ba034edd-d208-40e7-9677-08ffe945152c" />
+
+
 	- In the left panel, go to path, and then XRController and then XRController Left Hand and then Optional Controls.
 		- primaryButton is the X button, secondaryButton is the Y button
 		- Add either one depending on your goal, typically Y for move up and X for move down.
+ 
+ 
+        - <img width="778" height="606" alt="Screenshot 2026-03-16 171536" src="https://github.com/user-attachments/assets/731ad31a-a960-4c4d-89a1-b9d4fcad0b99" />
+
+		
 - Then you can create a script to control what happens when these buttons are pressed.
 	- See Scripts > Example Scripts > XYButtonMovement
 	- You can attach this to your [BuildingBlock] Camera Rig and set the references in the inspector to the input actions created above.
