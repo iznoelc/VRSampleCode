@@ -26,7 +26,7 @@ If you want to modify movement, here are a few separate ways to get started.
 - It should look something like this in the hierarchy. 
 
 
-
+<img width="312" height="780" alt="Screenshot 2026-03-16 171335" src="https://github.com/user-attachments/assets/8b973a6c-4277-4c72-b6b3-8c4ffd2dfa47" />
 
 
 > Note: I recommend not enabling both for one controller. If you try to move forward with sliding movement, it will also shoot a teleport ray, and then the player may move to an undesired location. 
