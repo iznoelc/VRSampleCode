@@ -8,6 +8,7 @@ TagManager:
   - Sphere
   - CubePlatform
   - SpherePlatform
+  - Sun
   layers:
   - Default
   - TransparentFX
