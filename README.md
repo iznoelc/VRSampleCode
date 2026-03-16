@@ -1,16 +1,18 @@
 # VRSampleCode
 This is sample code created for a VR development with Unity course at New College of Florida. The intention of this code is to demonstrate the basics of building a VR project in Unity using the new Meta XR SDKs and demonstrate the capabilities of the building blocks (such as grab interactions and camera rig) with a few extra basic Unity features (such as switching scenes and a day/night cycle). 
 
+
 ## PROJECT OVERVIEW
-See a short playthrough of this project [here](https://drive.google.com/file/d/1-6Fometqpo91JHnKgByfp0osla4wwLHk/view?usp=sharing).
+See a short playthrough of this project [here](https://drive.google.com/file/d/1UG5XNriw43X-S13GNOyyzoujjEL2yyU0/view?usp=sharing).
 
 When you play through this project you can expect 3 scenes. In each scene, there is a point counter that increases every time you grab/trigger grab an object. Once you reach 5 points (first scene) or 10 points (second scene) you will transport to the next scene. Each scene also has instructions on a world space canvas on one of the walls.
 
 - In the first scene, you can grab objects using either grab button on the sides of the controllers. There will be some objects that have physics (fall and roll around when you drop them) and objects without physics (stay floating after you let go). 
 - In the second scene, you can grab objects, once close enough to them, with the trigger press button on the back of either controller. 
-- In the third scene, you can compare normal movement with teleportation movement -
+- In the third scene, you can compare normal movement with teleportation movement:
 	- With the left joystick, you can use the normal sliding movement.
 	- With the right joystick, you can use the teleportation ray to move. 
+
 
 ## MODIFYING MOVEMENT
 If you want to modify movement, here are a few separate ways to get started.
@@ -21,9 +23,15 @@ If you want to modify movement, here are a few separate ways to get started.
 - You can change which method of movement is used by navigating to LeftInteractions or RightInteractions (depending which controller you want to change).
 - Find the LeftInteractions or RightInteractions child called "Controller" then expand its child "LocomotionControllerInteractorGroup"
 - Sliding movement is the child called "ControllerSlideInteractor" and Teleportation movement is called "TeleportControllerInteractor" - You can play around with these and see what it changes in your project
+- It should look something like this in the hierarchy. 
+
+
+
+
+
 > Note: I recommend not enabling both for one controller. If you try to move forward with sliding movement, it will also shoot a teleport ray, and then the player may move to an undesired location. 
 
-## ADDING MOVEMENT TO OTHER BUTTONS (i.e., x and y buttons) 
+### ADDING MOVEMENT TO OTHER BUTTONS (i.e., x and y buttons) 
 Movement is controlled by mapping different buttons on the Meta Quest controllers to actions using Unity's input system, specifically the InputSystem_Actions file. To add new actions:
 - Open the InputSystem_Actions file
 - Find "Actions" (should be at the top) and then click the plus button next to it.
@@ -36,6 +44,10 @@ If you wanted to create actions that map to the x and y buttons for up and down 
 	- In the left panel, go to path, and then XRController and then XRController Left Hand and then Optional Controls.
 		- primaryButton is the X button, secondaryButton is the Y button
 		- Add either one depending on your goal, typically Y for move up and X for move down.
+- Then you can create a script to control what happens when these buttons are pressed.
+	- See Scripts > Example Scripts > XYButtonMovement
+	- You can attach this to your [BuildingBlock] Camera Rig and set the references in the inspector to the input actions created above.
+	- If you press X it should log to the console "Moving Up" and if you press Y it should log to the console "Moving Down" - You can replace this with logic to actually do something to the player here if desired. 
 
 
 ## PROJECT INSTALLATION
@@ -75,6 +87,7 @@ In order to fix this, navigate to the directory storing your project. Navigate t
 
 This is due to Unity's version control, which you likely won't need for this project, so we can remove the package. Navigate to Window > Package Management > Package Manager
 Scroll down and find "Version Control." Click on it and hit remove. Restart your project if necessary. This should fix the error. 
+
 
 ## REFERENCES
 This project used the following references to set-up the code:

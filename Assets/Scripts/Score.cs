@@ -1,6 +1,9 @@
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// This class holds the score and ensures there is only one instance of it. Also allows it to persist over multiple scenes.
+/// </summary>
 public class Score : MonoBehaviour
 {
     public static Score Instance; // singleton instance of the score controller

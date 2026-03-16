@@ -3,6 +3,9 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using static Oculus.Interaction.Context;
 
+/// <summary>
+/// This class rotates the "sun" (main directional light) around the x-axis depending on the time of day.
+/// </summary>
 public class TimeController : MonoBehaviour
 {
     public static TimeController Instance;
@@ -35,6 +38,7 @@ public class TimeController : MonoBehaviour
         }
     }
 
+    // finds the correct sun object at the start of each new scene
     private void OnEnable()
     {
         currentTime = DateTime.Now.Date + TimeSpan.FromHours(startHour);

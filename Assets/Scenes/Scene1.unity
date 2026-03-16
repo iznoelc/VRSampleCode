@@ -3092,7 +3092,7 @@ GameObject:
   - component: {fileID: 410087042}
   m_Layer: 0
   m_Name: Sun
-  m_TagString: Untagged
+  m_TagString: Sun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10289,7 +10289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeMultiplier: 2000
   startHour: 12
-  sun: {fileID: 410087039}
   sunriseHour: 7
   sunsetHour: 20.5
 --- !u!4 &1475513464
