@@ -43,7 +43,7 @@ If you wanted to create actions that map to the x and y buttons for up and down 
 - Add a MoveUp and MoveDown action. 
 - On the left, there is the action properties panel. Make sure action type is set to "Button"
 - Right click the action and find "AddBinding"
-	- Go to where it says <NoBinding>. Click this.
+	- Go to where it says \<NoBinding>. Click this.
 
 
     - <img width="733" height="603" alt="Screenshot 2026-03-16 171512" src="https://github.com/user-attachments/assets/ba034edd-d208-40e7-9677-08ffe945152c" />
